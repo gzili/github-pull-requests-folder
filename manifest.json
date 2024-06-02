@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Github Pull Requests Folder",
+  "version": "1.0.0",
+  "permissions": [
+    "bookmarks"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content-script.js"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
+}
