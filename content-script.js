@@ -31,7 +31,7 @@ function runIfPullRequestPage(state) {
 
 function runIfAuthorMatchesLoggedInUser({ username }) {
   const header = document.querySelector('#partial-discussion-header');
-  const author = header.querySelector('.author').textContent;
+  const author = document.querySelector('.TimelineItem .author').textContent;
 
   if (author === username) {
     run({ header });

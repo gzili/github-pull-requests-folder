@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Github Pull Requests Folder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically creates a \"Pull Requests\" folder in bookmarks bar and populates it with your open PRs in GitHub.",
   "permissions": [
     "bookmarks"

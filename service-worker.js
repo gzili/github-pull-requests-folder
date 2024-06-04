@@ -13,9 +13,9 @@ async function handlePullRequest(data) {
   const bookmarkNode = await getPullRequestBookmarkNode(folderId, data.url);
   
   if (data.isOpen) {
-    createOrUpdateBookmark(folderId, bookmarkNode, data.title, data.url);
+    await createOrUpdateBookmark(folderId, bookmarkNode, data.title, data.url);
   } else {
-    removeBookmark(bookmarkNode);
+    await removeBookmark(bookmarkNode);
   }
 }
 
